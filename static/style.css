@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 5fr 90fr 5fr;
+    width: 100%;
+}
+.header{
+    background-color: rgb(49, 45, 45);
+    display: grid;
+    grid-template-columns: 25% 20% 40% 15%;
+    color: white;
+    padding: 10px;
+}
+
+.Logo-Place{
+    font-size: large;
+}
+
+.Logo-Place a:hover{
+    color: rgb(219, 110, 91);
+}
+
+.site-options{
+    display: flex;
+    flex-direction: row;
+}
+
+.site-options li{
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.site-options li:hover{
+    color: rgb(219, 110, 91);
+}
+
+.search-box{
+    width: 300px;
+    font-family: 'Poppins';
+}
+
+.search-btn{
+    font-family: 'Poppins';
+    font-weight: bold;
+    background-color: rgb(219, 110, 91);
+    cursor: pointer;
+}
+
+.submit-btn{
+    font-family: 'Poppins';
+    font-weight: bold;
+    background-color: rgb(219, 110, 91);
+    cursor: pointer;
+    max-width: 500px;
+}
+
+.credentials ul li{
+    list-style-type: none;
+    align-items:center;
+}
+
+.credentials ul li:hover{
+    color:  rgb(219, 110, 91);
+}
+
+.container{
+    display: table-caption;
+    margin: auto;
+}
+
+.sampleRow {
+    width: 600px;
+    font-family: 'Poppins';
+    margin: 2px;
+    padding: 2px;
+    float: right;
+}
+
+.sampletextarea{
+    width: 600px;
+    font-family: 'Poppins';
+    margin: 2px;
+    padding: 2px;
+    float: right;
+}
+
+.alert-success {
+    padding: 5px;
+    background-color: rgb(179, 240, 179);
+    color: green;
+    margin-bottom: 5px;
+    height: 25px;
+  }
+
+  .alert-warning {
+    padding: 5px;
+    background-color: rgb(240, 169, 169);
+    color: red;
+    margin-bottom: 5px;
+    height: 25px;
+  }
+
+  .closebtn {
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .closebtn:hover {
+    color: black;
+  }
+
+  .about-container{
+      display: flex;
+      margin: 10px;
+  }
+
+  .about-discription{
+      display: grid;
+  }
+  
+  .sher{
+      margin: 0;
+  }
+
+  .myintro{
+    margin: auto;
+    padding: 2px;
+    display: grid;
+  }
+
+  .myphoto{
+    max-height: 400px;
+    /* margin-top: 10px; */
+  }
+
+.about-photo{
+    margin-left: auto;
+}
+
+footer{
+    background-color: rgb(49, 45, 45);
+    align-items: center;
+    color: white;
+}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %} {% load static %} {% block css %}<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'style.css' %}"
+/>{% endblock css %} {% block main%}
+<div class="container">
+<h3>contact us</h3>
+<form action="/contact" method="post">
+{% csrf_token %}
+<div>
+    <label for="labelName">First Name</label>
+    <input
+      type="Text"
+      class="sampleRow"
+      id="labelName"
+      name="fname"
+      placeholder="Enter your First Name"
+    />
+  </div>
+  <div>
+    <label for="labelSurname">Surname</label>
+    <input
+      type="Text"
+      class="sampleRow"
+      id="labelSurname"
+      name="lname"
+      placeholder="Enter your Surname"
+    />
+  </div>
+  <div>
+    <label for="labelEmail">Email Id</label>
+    <input
+      type="email"
+      class="sampleRow"
+      id="labelEmail"
+      name="email"
+      placeholder="Enter your Email Address"
+    />
+  </div>
+  <div>
+    <label for="labelQuery">Query/Suggession</label>
+    <textarea class="sampletextarea" name="query" id="labelQuery" rows="4"></textarea>
+  </div>
+  <button type="submit" class="submit-btn">Submit</button>
+</div>
+</form>
+{% endblock main %}

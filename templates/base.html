@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    {% block css %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'style.css' %}"
+    />
+    {% endblock css %}
+    <title>मैफलीत माझ्या...</title>
+  </head>
+  <body class="grid-container">
+    <header class="header">
+      <div class="Logo-Place">
+        <a class="logo" href="/">मैफलीत माझ्या येशील का?</a>
+      </div>
+      <div>
+        <ul class="site-options">
+          <a href="contact"><li>Contact</li></a>
+          <a href="about"><li>About Us</li></a>
+        </ul>
+      </div>
+      <div class="search">
+        <input class="search-box" type="text" />
+        <input class="search-btn" type="button" value="Search" />
+      </div>
+      <div class="credentials">
+        <ul>
+          <a href="login"><li>Login</li></a>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      {% for message in messages %}
+      <div class="alert-{{ message.tags }}">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        {{ message }}
+      </div>
+      {% endfor %}
+      {% block main%}
+      {% endblock main%}
+    </main>
+    <footer class="footer">
+      &#169; Copyrights - All Rights Reserved
+    </footer>
+  </body>
+</html>
