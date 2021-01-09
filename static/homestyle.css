@@ -68,6 +68,14 @@ a{
     max-width: 500px;
 }
 
+.btnGotoBlog{
+    font-family: 'Poppins';
+    font-weight: bold;
+    background-color: rgb(219, 110, 91);
+    cursor: pointer;
+    margin-top: 5px;
+}
+
 .credentials ul li{
     list-style-type: none;
     align-items:center;
@@ -80,6 +88,7 @@ a{
 .container{
     display: table-caption;
     margin: auto;
+    margin-left: 20px;
 }
 
 .sampleRow {
@@ -88,6 +97,7 @@ a{
     margin: 2px;
     padding: 2px;
     float: right;
+    margin-left: 20px;
 }
 
 .sampletextarea{
@@ -96,6 +106,7 @@ a{
     margin: 2px;
     padding: 2px;
     float: right;
+    margin-left: 20px;
 }
 
 .alert-success {
@@ -131,7 +142,7 @@ a{
 
   .about-container{
       display: flex;
-      margin: 10px;
+      margin: 12px;
   }
 
   .about-discription{
@@ -139,22 +150,36 @@ a{
   }
   
   .sher{
-      margin: 0;
+      margin: 10px;
   }
 
   .myintro{
     margin: auto;
-    padding: 2px;
+    padding: 20px;
     display: grid;
   }
 
   .myphoto{
-    max-height: 400px;
-    /* margin-top: 10px; */
+    max-height: 200px;
+    border-radius: 180px;
+    margin-top: 10px;
   }
 
 .about-photo{
-    margin-left: auto;
+    display: flex;
+    margin: auto;
+}
+
+.notings{
+    display: flex;
+    margin: auto;
+}
+
+.card{
+    margin: auto;
+    padding: 5px;
+    max-width: 25rem;
+    background: rgb(146, 146, 219);
 }
 
 footer{

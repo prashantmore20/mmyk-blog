@@ -1,31 +1,49 @@
-{% extends 'base.html' %} {% load static %} {% block css %}<link
-  rel="stylesheet"
-  type="text/css"
-  href="{% static 'style.css' %}"
-/>{% endblock css %} 
-{% block main%}
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'homestyle.css' %}" />
+{% endblock css %} {% block main%}
 <div class="about-container">
-<div class="about-discription">
-<span>
-First of all, let me tell u one thing...
-When i decided to create a blog for my Gazals and poems, i had just one thinking in my mind.....</span>
-<span class="sher">कदम बढ़ते है तो फासले भी कम होते होंगे</span>
-<span class="sher">उम्मीद का दिया जलता है तो होसले भी बढ़ते होंगे</span>
-<span class="sher">आज इस समंदर में अपना नाम नही तो क्या हुआ</span>
-<span class="sher">कल के शबनम पर अपने भी नाम खिलते होंगे ॥</span>
-<span class="sher">मैं एक अदनासा शायर हु ऊँचे ख्वाब रखता हूँ</span>
-<span class="sher">अपने घर में उजाले के लिए मैं आफ़ताब रखता हूँ</span>
-<span class="sher">आज अपनी शयरिसे वाकिफ कोई नही तो क्या हुआ</span>
-<span class="sher">कल की महफ़िल में अपने भी कलाम खिलते होंगे ॥</span>
-<span class="sher">i hope, u will like my poems and gazals...</span>
-</div>
-<div class="about-photo">
-<img class = "myphoto" src="/static/img/myphoto.jpg" alt="Myphoto">
-<div class="myintro">
-<span>मैं एक अदनासा शायर हु ऊँचे ख्वाब रखता हूँ</span>
-<span>अपने घर में उजाले के लिए मैं आफ़ताब रखता हूँ</span>
-<span>प्रशांत रमेश</span>
-</div>
-</div>
+  <div class="about-discription">
+    <div class="about-photo">
+      <img class="myphoto" src="/static/img/myphoto.jpg" alt="Myphoto" />
+      <div class="myintro">
+        <span>है मिजाज मेरा के खामोशीसे महसूस करू तुम्हे,</span>
+        <span>कभी पढलेना मेरी गझलोमे तसल्ली के लिये</span>
+        <span>- प्रशांत रमेश</span>
+      </div>
+    </div>
+    <div class="sher">
+      First of all, let me tell u one thing... When i decided to create a blog
+      for my Gazals and poems, i had just one thinking in my mind.....
+    </div>
+    <div class="notings">
+      <div class="sher">
+        कदम बढ़ते है तो फासले भी कम होते होंगे,
+        <br />
+        उम्मीद का दिया जलता है तो होसले भी बढ़ते होंगे,
+        <br />
+        आज इस समंदर में अपना नाम नही तो क्या हुआ,
+        <br />
+        कल के शबनम पर अपने भी नाम खिलते होंगे ॥
+        <br />
+      </div>
+      <div class="sher">
+        मैं एक अदनासा शायर हु ऊँचे ख्वाब रखता हूँ,
+        <br />
+        अपने घर में उजाले के लिए मैं आफ़ताब रखता हूँ,
+        <br />
+        आज अपनी शयरिसे वाकिफ कोई नही तो क्या हुआ,
+        <br />
+        कल की महफ़िल में अपने भी कलाम खिलते होंगे ॥
+      </div>
+    </div>
+    <div class="sher">
+      I hope, u will like my poems and gazals...
+      <br />
+      <input class="btnGotoBlog" type="submit" value="Explore My Blog">
+      <br/>
+      <br>
+      - प्रशांत रमेश
+    </div>
+  </div>
 </div>
 {% endblock main %}
