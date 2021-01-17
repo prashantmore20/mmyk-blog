@@ -177,11 +177,20 @@ a{
 
 .card{
     margin: auto;
-    padding: 5px;
+    margin-top: 5px;
     max-width: 25rem;
     background: rgb(146, 146, 219);
 }
 
+.card-header{
+    color: white;
+    text-align: center;
+}
+
+.card-title{
+    color:rgb(247, 241, 217);
+    text-align: center;
+}
 footer{
     background-color: rgb(49, 45, 45);
     align-items: center;
