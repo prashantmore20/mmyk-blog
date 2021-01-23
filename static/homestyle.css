@@ -1,11 +1,112 @@
 *{
     margin: 0;
-}
-
-html, body{
-    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #161623;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(30% at right 70%);
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(20% at 10% 10%);
+}
+
+.home-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.home-container .card{
+    position: relative;
+    width: 250px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.home-container .card .content{
+    padding: 20px;
+    /* transform: translateY(100px);
+    opacity: 0; */
+    text-align: center;
+    transition: 0.5s;
+}
+
+/* .home-container .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+} */
+
+.home-container .card .content .card-header{
+    position: absolute;
+    top: -60px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+}
+
+.home-container .card .content .card-body .card-title{
+    font-size: 1.5rem;
+    color: #fff;
+    z-index: 1;
+}
+
+.home-container .card .content .card-body .card-text{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.home-container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.2);
 }
 
 a{
@@ -24,10 +125,12 @@ a{
     grid-template-columns: 25% 20% 40% 15%;
     color: white;
     padding: 10px;
+    width: 100%;
 }
 
 .Logo-Place{
     font-size: large;
+    z-index: 1;
 }
 
 .Logo-Place a:hover{
@@ -41,7 +144,9 @@ a{
 
 .site-options li{
     list-style-type: none;
+    margin-left: 10px;
     margin-right: 10px;
+    z-index: 1;
 }
 
 .site-options li:hover{
@@ -76,6 +181,10 @@ a{
     margin-top: 5px;
 }
 
+.credentials{
+    z-index: 1;
+}
+
 .credentials ul li{
     list-style-type: none;
     align-items:center;
@@ -85,10 +194,12 @@ a{
     color:  rgb(219, 110, 91);
 }
 
-.container{
+.contact-container{
     display: table-caption;
     margin: auto;
     margin-left: 20px;
+    color: white;
+    z-index: 1;
 }
 
 .sampleRow {
@@ -143,6 +254,7 @@ a{
   .about-container{
       display: flex;
       margin: 12px;
+      color: white;
   }
 
   .about-discription{
@@ -151,6 +263,7 @@ a{
   
   .sher{
       margin: 10px;
+      z-index: 1;
   }
 
   .myintro{
@@ -163,6 +276,7 @@ a{
     max-height: 200px;
     border-radius: 180px;
     margin-top: 10px;
+    z-index: 1;
   }
 
 .about-photo{
@@ -175,22 +289,6 @@ a{
     margin: auto;
 }
 
-.card{
-    margin: auto;
-    margin-top: 5px;
-    max-width: 25rem;
-    background: rgb(146, 146, 219);
-}
-
-.card-header{
-    color: white;
-    text-align: center;
-}
-
-.card-title{
-    color:rgb(247, 241, 217);
-    text-align: center;
-}
 footer{
     background-color: rgb(49, 45, 45);
     align-items: center;

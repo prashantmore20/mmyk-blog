@@ -1,2 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'homestyle.css' %}" />
+{% endblock css %}
 {% block main%} This Login page is reflecting through Block mode of Django{% endblock main %}
