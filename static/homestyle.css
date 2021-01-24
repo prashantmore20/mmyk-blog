@@ -311,11 +311,16 @@ a{
 }
 
 .login-container .card{
+    display: grid;
     margin: auto;
     width: 600px;
     height: 350px;
-    margin-top: 50px;
     color: white;
+    margin-top: 80px;
+}
+
+.login-container .card .content{
+    margin-top: 70px;
 }
 
 .LoginRow{
