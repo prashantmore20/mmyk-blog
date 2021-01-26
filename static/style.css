@@ -78,9 +78,9 @@ body::after{
 
 .home-container .card .content .card-header{
     position: absolute;
-    top: -60px;
+    top: -40px;
     right: 30px;
-    font-size: 8rem;
+    font-size: 7rem;
     color: rgba(255, 255, 255, 0.5);
     pointer-events: none;
 }
@@ -306,7 +306,7 @@ a{
 .login-container{
     display: flex;
     margin: auto;
-    width: 600px;
+    width: 500px;
     margin-top: 30px;
 }
 
@@ -358,6 +358,10 @@ a{
     box-shadow: rgba(0, 0, 0, 0.2);
 }
 
+.socialicons{
+    margin: auto;
+}
+
 .social-media{
     position: relative;
     display: flex;
@@ -386,6 +390,47 @@ a{
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(4px);
+}
+
+.signupdisplay{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+}
+
+.socialicons a{
+    margin: auto;
+}
+
+.Signup-container{
+    display: flex;
+    margin: auto;
+    width: 500px;
+    margin-top: 10px;
+}
+
+.Signup-container .card{
+    display: grid;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    color: white;
+}
+
+.Signup-container .card .content{
+    margin-top: 35px;
+}
+
+.SignupRow{
+    width: 300px;
+    font-family: 'Poppins';
+    margin: 2px;
+    padding: 2px;
+    float: right;
+    margin-left: 20px;
 }
 
 footer{

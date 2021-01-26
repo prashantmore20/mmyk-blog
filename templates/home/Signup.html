@@ -1,0 +1,75 @@
+{% extends 'base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock css %}
+{% block main%}
+<div class="Signup-container">
+  <div class="card" id="Signupcard">
+    <div class="content">
+      <div class="card-header">Sign-up</div>
+        <div class="card-body">
+            <form action="#" method="post">
+                <div class="lable">First Name</div>
+                    <div>
+                        <input
+                            type="text"
+                            class="LoginRow"
+                            id="Loginuser"
+                            name="Loginuser"
+                            placeholder="Enter your First Name"/>
+                    </div>
+                <div class="lable">Last Name</div>
+                    <div>
+                        <input
+                            type="text"
+                            class="LoginRow"
+                            id="Loginuser"
+                            name="Loginuser"
+                            placeholder="Enter your Last Name"/>
+                    </div>
+                <div class="lable">Email</div>
+                    <div>
+                        <input
+                        type="email"
+                        class="SignupRow"
+                        id="SignupEmail"
+                        name="email"
+                        placeholder="Enter your Email Id"/>
+                    </div>
+                <div class="lable">Password</div>
+                    <div>
+                        <input
+                        type="password"
+                        class="SignupRow"
+                        id="SignupPassword"
+                        name="SignupPassword"
+                        placeholder="Enter Your Password"/>
+                    </div>
+                <div class="lable">Confirm Password</div>
+                    <div>
+                        <input
+                        type="password"
+                        class="SignupRow"
+                        id="ConfirmPassword"
+                        name="ConfirmPassword"
+                        placeholder="Confirm Your Password"/>
+                    </div>    
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+        <div class="socialicons">
+        <ul class="social-media">
+            <li><a href="#"><i class="fa fa-facebook" area-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" area-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" area-hidden="true"></i></a></li>
+        </ul>
+            <a href="/login">
+            <input type="button" class="signupdisplay" value="Already a User!Login!!">
+            </a>
+        </div>
+  </div>
+</div>
+{% endblock main %}
+{% block JavaScript %}
+{% endblock JavaScript %}
