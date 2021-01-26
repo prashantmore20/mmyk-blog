@@ -1,4 +1,21 @@
 {% extends 'base.html' %} {% load static %} {% block css %}
-<link rel="stylesheet" type="text/css" href="{% static 'homestyle.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
 {% endblock css %}
-{% block main%} (f'This is Blog Post Page: {slug}') {% endblock main %}
+{% block main%} 
+<div class="blogContainer">
+    <div class="blogContents">
+    This is Blog Contents
+    </div>
+    <div class="blogArticles">
+        <div class="Articleheading">
+        This is Atricle Heading
+        </div>
+        <div class="ArticleAuthor">
+        Here Author Name and Date posted
+        </div>
+        <div class="Article">
+        Here Article Post
+        </div>
+    </div>
+</div>
+{% endblock main %}
