@@ -4,17 +4,24 @@
 {% block main%}
 <div class="blogContainer">
     <div class="blogContents">
-    This is Blog Contents
+    {% for post in allPost %}
+    <ul>
+        <li>{{post.title}}</li>
+    </ul>
+    {% endfor %}
     </div>
     <div class="blogArticles">
+    {% for post in allPost %}
         <div class="Articleheading">
-        This is Atricle Heading
+        {{post.title}}
         </div>
         <div class="ArticleAuthor">
-        Here Author Name and Date posted
+        {{post.author}} {{post.timeStamp}} 
         </div>
         <div class="Article">
-        Here Article Post
+        {{post.contents}}
+        </div>
+    {% endfor %}
     </div>
         <div class="pagination">
             <a href="#">&laquo;</a>
@@ -22,7 +29,6 @@
             <a href="#">2</a>
             <a href="#">3</a>
             <a href="#">&raquo;</a>
-        </div>
         </div>
 </div>
 {% endblock main %}
