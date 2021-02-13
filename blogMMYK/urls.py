@@ -23,5 +23,6 @@ admin.site.index_title = "Welcome to Admin Portal of मैफलीत मा�
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
-    path('blog/', include('blog.urls'))
+    path('blog/', include('blog.urls')),
+    path('accounts/', include('allauth.urls')),
 ]
